@@ -237,10 +237,7 @@ h5 {
   align-items: center;
   gap: 24px;
 }
-.main-icons-list {
-  display: flex;
-  gap: 24px;
-}
+
 .main-icons-block {
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
@@ -250,6 +247,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 .main-icons-list-item {
   width: calc((100% - 72px) / 4);
@@ -351,20 +349,21 @@ h5 {
 }
 .social-net-list {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-
   gap: 24px;
-  width: 232px;
+  height: 40px;
+  margin-top: 8px;
+}
+.social-net-list-item {
+  width: 40px;
   height: 40px;
 }
 .social-net-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -410,6 +409,7 @@ h5 {
   background: var(--white);
   border: 1px solid var(--cornflower);
   border-top: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-block {
@@ -421,9 +421,8 @@ h5 {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-card:hover .portfolio-text-block {
+.portfolio-card:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -473,10 +472,12 @@ h5 {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
-.footer-media-container {
-  margin-left: 120px;
+.footer-container-text {
+  margin-right: 120px;
 }
+
 .footer-accent {
   color: #f4f4fd;
 }
@@ -505,14 +506,13 @@ h5 {
   color: #fff;
   margin-bottom: 16px;
 }
-.footer-social-link {
-  width: 40px;
-  height: 40px;
-}
+
 .social-logo-footer {
   background-color: #4d5ae5;
 }
-
+.footer-soc-list {
+  gap: 16px;
+}
 .soclink-footer {
   display: flex;
   justify-content: center;
@@ -524,6 +524,7 @@ h5 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soclink-footer:hover {
+.soclink-footer:hover,
+.soclink-footer:focus {
   background-color: #31d0aa;
 }
